@@ -1,0 +1,17 @@
+.c-wrapper{
+    background:var(--blackGreen);
+}
+.c-container {
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.c-container>a>img{
+    width: 10rem;
+}
+
+@media (max-width:800px) {
+    .c-container>a>img{
+        width: 7rem;
+    }
+}

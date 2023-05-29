@@ -1,0 +1,104 @@
+.contact-container {
+    /* background-color: red; */
+    width: 100%;
+}
+
+.contact-right, .contact-left{
+    width: 50%;
+    padding: 1rem;
+    /* background-color: #070707; */
+}
+
+
+.contactTitleSection>span{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contactModes .row {
+    justify-content: space-between;
+}
+
+.contactModes{
+    width: 100%;
+}
+
+.c-icon svg {
+    transform: scale(1.8);
+}
+.mode {
+    margin: 1rem;
+    color: cyan;
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px solid var(--lightGreen);
+    border-radius: 0.3rem;
+    gap: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.mode .button {
+    width: 100%;
+    background: var(--darkGreen);
+    color: var(--textGreen);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.mode> :nth-child(1){
+    padding: 0.5rem;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+
+.mode .detail .primaryText {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.mode:hover{
+    transform: scale(1.1);
+    animation: glowEffect 1.5s linear infinite;
+}
+
+.mode .button:hover{
+    background:var(--button-gradient);
+    color: var(--darkGreen);
+    transform: scale(0.9);
+}
+
+@media (max-width:1000px) {
+    .mode> :nth-child(1){
+        gap: 0.5rem;
+    }
+    .mode .c-icon svg{
+        transform: scale(0.8);
+        margin: 0.5rem;
+    }
+    .mode span, .mode .button{
+        font-size: 50%;
+    }
+    .mode {
+        gap:0.2rem;
+    }
+    .detail .primaryText{
+        font-size: 10%;
+    }
+}
+
+@media (max-width:800px) {
+    .contact-right, .contact-left{
+        width: 100%;
+        padding: 0;
+    }
+    .contact-container{
+        padding:0;
+    }
+    .mode {
+        padding:0rem;
+        gap:0rem;
+    }
+    .mode span{
+        font-size: 0;
+    }
+}   

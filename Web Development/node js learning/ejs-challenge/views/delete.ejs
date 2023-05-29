@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") -%>
+
+<h1>DELETE</h1>
+<form action="/delete" method="post">
+    <div class="form-group">
+        <label for="compose" ><h6 class="font-italic">Enter the Title of the Form you want to delete</h6></label>
+        <input class="form-control" type="text" name="title"><br>
+    </div>
+    <div class="form-group">
+        <label class="" for="compose"><h6>Enter the password</h6></label>
+        <input type="text" name="password" class="form-control">
+        <br>
+        <input class="btn btn-primary" type="submit" value="Publish">
+    </div>
+    <br>
+    <% if(deleted == ""){ %>
+        <p class="text-warning">Click to Delete</p>
+    <% }else if(deleted == 1){ %>
+        <p class="text-warning">Post Deleted Successfully</p>
+    <% }else if(deleted == 0){ %>
+        <p class="text-warning">Post does not exist</p>
+    <% }else if(deleted == "wrong"){ %>
+        <p class="text-warning">passoword is wrong</p>
+    <% } %>
+</form>
+
+<%- include("partials/footer.ejs") -%>

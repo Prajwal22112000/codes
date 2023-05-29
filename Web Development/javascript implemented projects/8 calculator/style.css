@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(241, 234, 221);
+}
+.container {
+    height: 100vh;
+    max-width: 100%;
+    /* border: 5px red solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.calculator {
+    box-shadow: 0rem 0.3rem 0.2rem 0.1rem rgba(0, 0, 0, 0.418);
+    height: auto;
+    max-width: 60%;
+    /* border: 5px blueviolet solid; */
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+#input {
+    background: rgba(0, 0, 0, 0);
+    text-align: right;
+    font-size: 300%;
+    padding: 0rem 1rem;
+    height: 5rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+input {
+    border:none;
+    border-radius: 1rem;
+}
+.numbers {
+    margin: 0rem 1rem;
+    width: 100%;
+    text-align: center;
+}
+.row {
+    /* border: green solid ; */
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: row;
+}
+.row .btn {
+    /* border: 1px teal solid; */
+    background-color: rgb(196, 255, 204);
+    border: none;
+    border-radius: 0.2rem;
+    margin: 1%;
+    font-size: 300%;
+    width: 23%;
+}
+
+.row .sum {
+    background-color: rgb(255, 241, 241);
+    width:100%;
+}
+.row .sum:hover {
+    background-color: rgb(255, 118, 118);
+}
+.row .sum:active {
+    background-color: rgb(252, 64, 64);
+}
+
+.row .op {
+    background-color: rgb(255, 173, 173);
+}
+.row .op:hover {
+    background-color: rgb(255, 125, 125);
+}
+.row .op:active {
+    background-color: rgb(255, 64, 64);
+}
+.row button:hover {
+    background-color: rgb(255, 255, 255);
+}
+.row button:active {
+    background-color: rgb(132, 255, 84);
+}
+.footer {
+    padding: 0.3rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 60%;
+    }
+    .footer{
+        font-size: 120%;
+    }
+}

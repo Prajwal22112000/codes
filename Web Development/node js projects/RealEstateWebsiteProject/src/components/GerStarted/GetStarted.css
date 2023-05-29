@@ -1,0 +1,35 @@
+.gs-wrapper{    /* background-color: red; */
+    width: 100%;
+}
+
+.inner-gs-container{
+    /* background-color: red; */
+    padding: 1rem;
+    grid:1.5rem;
+    text-align: center;
+    background:var(--darkGreen);
+    border: 0.3rem solid var(--green);
+    border-radius: 1rem;
+}
+.inner-gs-container>span{
+    margin: 0.7rem;
+}
+
+.gs-button{
+    color:var(--blackGreen);
+    margin: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: 0.3rem solid var(--green);
+    background:var(--green); 
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 250ms ease-in;
+}
+.gs-button:hover{
+    transform: scale(1.1);
+    background:var(--blackGreen);
+    color: aquamarine;
+    border-color: var(--blackGreen);
+}

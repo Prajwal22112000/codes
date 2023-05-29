@@ -1,0 +1,55 @@
+
+.v-right{
+    gap: 0.5rem;
+}
+.v-right, .v-left{
+    padding: 1rem;
+    width: 50%;
+}
+
+
+.accordionItem{
+    border: none;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    border: 0.8px solid var(--lightGreen);
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.accordionButton {
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordionItem:hover {
+    transform: scale(101%);
+    animation: glowEffect 1.5s ease-in-out infinite;
+}
+
+.icon {
+    transform: scale(170%);
+    padding:0.7rem;
+}
+
+.icon svg {
+    fill: var(--textGreen);
+}
+
+
+
+
+@media (max-width:800px) {
+    .v-right, .v-left{
+        width: 100%;
+    }
+    .v-container{
+        padding: 0;
+    }
+}
+@media (max-width:480px) {
+   
+}
+

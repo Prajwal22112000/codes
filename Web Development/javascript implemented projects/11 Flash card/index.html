@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h2>FlashCards</h2>
+		<div>
+			<button onclick="newCard()">New Card</button>
+			<button onclick="delCard()">Del Card</buttop>
+		</div>
+	</header>
+
+	<div class="cardbody">
+		<h3>Create FlashCard</h3>
+		<label for="question">Question</label>
+		<textarea id="question"></textarea>
+		<label for="answer">Answer</label>
+		<textarea id="answer"></textarea>
+		<div>
+			<button onclick="Savecard()">Save</button>
+			<button onclick="Close()">Close</button>
+		</div>
+	</div>
+
+	<div class="hr"></div>
+
+	<div class="cards"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1605169071 source:c:\users\asus\documents\programming in c\very basic dice game\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	<time.h>
+

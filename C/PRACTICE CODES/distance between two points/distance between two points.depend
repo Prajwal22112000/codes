@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603966272 source:c:\users\asus\documents\programming in c\distance between two points\main.c
+	<stdio.h>
+	<stdlib.h>
+

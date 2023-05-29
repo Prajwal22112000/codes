@@ -1,0 +1,116 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background: linear-gradient( rgb(84, 255, 84), rgb(252, 252, 52));
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin:auto;
+    width: 95%;
+}
+.calculator {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.356);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 255, 216);
+    padding: 1rem;
+    margin: auto;
+    min-height: auto;
+    width: 28rem;
+}
+.calculator h2{
+    font-weight: 600;
+    margin: 0px;
+    text-align: center;
+}
+.calculator h4 {
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+.hr {
+    margin: 1rem 0px;
+    text-align: center;
+    border-bottom: 2px solid rgba(145, 145, 145, 0.219);
+}
+.box {
+    margin: 0px;
+    height: 2rem;
+    border: 1px solid rgba(112, 112, 112, 0.445);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 4px;
+}
+.box input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.box img {
+    width: 2rem ;
+}
+.container select {
+    width: 100%;
+    height: 2rem;
+    outline: 0;
+    border: 1px solid rgba(2, 2, 2, 0.192);
+}
+.button {
+    width: 100%;
+}
+button {
+    display: flex;
+    margin: auto;
+    background: none;
+    border: 1px rgba(128, 128, 128, 0.377) solid;
+    border-radius: 5px;
+    padding: 0.4rem;
+}
+button:active {
+    background-color: rgba(160, 160, 80, 0.507);
+}
+#tip {
+    visibility: hidden;
+    background-color: rgb(0, 104, 52);
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    width: 8rem;
+    padding: 1rem;
+    bottom: 3rem;
+    position: fixed;
+}
+#tip.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein{
+    from{
+        bottom:0;
+        opacity: 0;
+    }
+    to{
+        bottom: 3rem;
+        opacity: 1;
+    }
+}
+@keyframes fadeout{
+    from{
+        bottom: 3rem;
+        opacity: 1;
+    }
+    to{
+        bottom:0;
+        opacity: 0;
+    }
+}
+@media (max-width: 640px) {
+    .calculator {
+        width: 90%;
+    }
+}

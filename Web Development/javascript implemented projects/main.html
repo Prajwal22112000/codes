@@ -1,0 +1,79 @@
+<!-- This will be the homepage to open the every other web pages in the folder/repository -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dynamic Mini Projects Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-family: 'Mukta', sans-serif;
+            text-align: center;
+            color: rgb(55, 62, 72);
+        }
+        #container {
+            border-radius: 1rem;
+            background-color: rgb(108, 227, 149);
+            margin: 1rem;
+            height: 90vh;
+        }
+        h1{
+            font-size: 300%;
+        }
+        #projects{
+            border-radius: 1rem;
+            background-color: rgb(28, 76, 60);
+            margin: 2rem;
+            padding: 1rem;
+            color: rgb(68, 48, 48);
+        }
+        a, p{
+            color: rgb(108, 227, 149);
+            font-size: 150%;;
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: rgb(68, 48, 48);
+        }
+        a:hover{
+            position:relative;
+            font-size: 170%;
+            color:rgb(191, 202, 216);
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="container">
+        <h1>Welcome!</h1>
+        <h4>Click The Project That you would like to see</h4>
+        <div id="projects">
+            <a href="1%20radom%20color/index.html">Random Color</a><br>
+            <a href="2 hex code/index.html">Hex Code</a><br>
+            <a href="3 random quote/index.html">Random Quote</a><br>
+            <a href="5 counter/index.html"> Manual Counter</a><br>
+            <a href="6 image carousel/index.html">Image Carousel</a><br>
+            <a href="7 digital clock/">Digital Clock</a><br>
+            <a href="8 calculator/index.html">Calculator</a><br>
+            <a href="9 grocery list/">Grocery List</a><br>
+            <a href="10 Tip calculator/index.html">Tip Calculator</a><br>
+            <a href="11 Flash card/index.html">Flash Cards</a>
+            <hr>
+            <p style="color:rgb(119, 158, 115);">more projects will be added sooner...</p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        document.getElementById("body").style.background = "rgb(130, 240, 200)";
+        var container = document.getElementById("container");
+        var projects = document.getElementById("projects");
+    </script>
+</body>
+</html>

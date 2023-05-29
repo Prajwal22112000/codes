@@ -1,0 +1,65 @@
+.h-wraper {
+    background-color: var(--blackGreen);
+    height: 4rem;
+}
+
+.h-container {
+    overflow-x: hidden;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--textGreen);
+}
+
+.h-container>img {
+    transition: 100ms ease-in-out;
+    border-radius: 0.2rem;
+    border: none;
+    background: var(--textGreen);
+}
+
+
+.h-container>img:hover {
+    content: url(../.s./../public/logo2.png);
+    transform: scale(1.1);
+    box-shadow: 0rem 0rem 1.4rem 1.5rem var(--textGreen);
+}
+
+.h-menu {
+    gap: 1.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-icon {
+    position: absolute;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        /* background-color: red; */
+        display: block;
+        right: 1rem;
+        top: 0.4rem;
+        fill: var(--textGreen);
+    }
+
+    .h-container {
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+
+    .h-menu {
+        position: absolute;
+        top: -400px;
+        width: 80%;
+        background: var(--blackGreen);
+        flex-direction: column;
+        font-weight: 600;
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        z-index: 1;
+        box-shadow: 0 0 1rem black;
+    }
+}

@@ -1,0 +1,1 @@
+#craette a class customer which has account number, balacne, anme, custmer can deposit some amount, withdraw some amount (amount <= to balance), check the balance as well

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1604344468 source:c:\users\asus\documents\programming in c\program to find area and volume of differnet shapes\main.c
+	<stdio.h>
+	<stdlib.h>
+

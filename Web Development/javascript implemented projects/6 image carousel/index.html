@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="image fade">
+      <img src="img/2019-Bugatti-Divo-V5-1080.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2019-Ferrari-488-Pista-Spider-V5-1080.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2020-McLaren-600LT-Spider-V9-1536.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2019-Ferrari-488-Pista-V5-1080.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2020-Aston-Martin-DBS-Superleggera-Volante-V1-1536.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2020-Audi-RS7-Sportback-V5-1536.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2020-bentley-flying-spur.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2020-Lamborghini-Sian-V11-1080.jpg" alt="car image" width="100%">  
+    </div>
+    <div class="image fade">
+      <img src="img/2020-Audi-RS7-Sportback-V5-1536.jpg" alt="car image" width="100%">  
+    </div>
+    
+    <button onclick="show_image(-1)" id="previous"><img src="/source/backward.png" alt="previous"></button>
+    <button onclick="show_image(1)" id="next"><img src="/source/forward.png" alt="next"></button>
+    
+    <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

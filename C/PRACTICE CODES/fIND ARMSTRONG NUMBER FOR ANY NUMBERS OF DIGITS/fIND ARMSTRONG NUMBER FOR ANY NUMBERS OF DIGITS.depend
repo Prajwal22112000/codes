@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605334440 source:c:\users\asus\documents\programming in c\find armstrong number for any numbers of digits\main.c
+	<stdio.h>
+	<stdlib.h>
+

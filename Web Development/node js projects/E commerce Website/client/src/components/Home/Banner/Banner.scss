@@ -1,0 +1,76 @@
+@import "../../../css-config/mixins.scss";
+.banner-hero{
+    color:white;
+    background:radial-gradient(rgb(250, 51, 250), rgb(104, 0, 177));
+    .banner-content{
+        width: 80%;
+        margin: auto;
+        justify-content:center;
+        // background: red;
+        @include md {
+            flex-direction: column-reverse;
+            width: 100%;
+
+        }
+        .banner-right, .banner-left{
+            h1{
+                font-size: 700%;
+            }
+            aspect-ratio: 1/1;
+            height: 100%;
+            // background-color: red;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            padding: 1rem;
+            overflow: hidden;
+            gap:2.5rem;
+            @include md {
+                width: 80%;
+            }
+            @include sm{
+                h1{
+                    font-size: 300%;
+                }
+            }
+            img{
+                // margin: 1rem;
+                width: 70%;
+                @include md{
+                    width: 80%;
+                }
+            }
+        }
+        .buttons{
+            gap: 1rem ;
+            button{
+                width: rem;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                padding: 0.5rem;
+                border: 0.1rem solid var(--textColor);
+                color:white;
+                // margin: 1rem;
+                &:nth-child(2){
+                    background-color: var(--headerBlue);
+                }
+                &:active{
+                    background-color: var(--violet);
+                    transition: all 100ms ease-in;
+                }
+                @include md{
+                    font-size: 80%;
+                }
+                @include sm{
+                    font-size: 60%;
+                    // width: 70%;
+                }
+
+            }
+        }
+    }
+}

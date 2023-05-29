@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603832037 source:c:\users\asus\documents\programming in c\hcf calculator\main.c
+	<stdio.h>
+	<stdlib.h>
+

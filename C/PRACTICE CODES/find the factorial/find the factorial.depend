@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605259518 source:c:\users\asus\documents\programming in c\find the factorial\main.c
+	<stdio.h>
+	<stdlib.h>
+

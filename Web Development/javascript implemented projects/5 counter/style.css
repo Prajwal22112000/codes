@@ -1,0 +1,52 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(rgb(255, 68, 68), rgb(155, 253, 42));
+    background-repeat: no-repeat;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+.counter {
+    background:bisque;
+    padding: 2rem;
+    width: 60%;
+    margin: auto;
+    border: 3px solid rgba(204, 64, 64, 0.507);
+    border-radius: 1rem;
+    text-align: center;
+}
+.counter h1 {
+    margin: 0px 0px 0px 0px;
+    font-weight: 900;
+    font-size: 300%;
+}
+#count {
+    font-size: 800%;
+    margin: 1px 0px 1rem 0px;
+}
+.counter button {
+    border: white solid 5px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0px 5%;
+    width: 39%;
+}
+.counter button:hover {
+    background-color: rgb(99, 99, 99);
+}
+.counter button img {
+    width: 1rem;
+    margin-right: 0.5rem;
+    animation: floatarrow 2s infinite ;
+}
+
+@keyframes floatarrow {
+    50%{
+        transform: translateY(0.5rem);
+    }
+}

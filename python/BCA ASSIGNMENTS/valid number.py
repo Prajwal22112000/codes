@@ -1,0 +1,1 @@
+# check if mobile number is valid or not starting from 9

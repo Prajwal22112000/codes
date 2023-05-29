@@ -1,0 +1,26 @@
+GET http://localhost:3000/students
+
+###
+GET http://localhost:3000/students/645f5ddfcb1c7004aeff6c4e
+
+###
+POST http://localhost:3000/students
+Content-Type:  application/json
+
+{
+    "name":"Prajwal Negi",
+    "age":21,
+    "skills": ["java", "javascript"]
+}
+
+###
+DELETE http://localhost:3000/students/645f5ddfcb1c7004aeff6c4e
+
+###
+PATCH  http://localhost:3000/students/645f5ddfcb1c7004aeff6c4e
+
+Content-Type: application/json
+
+{
+    "name":"Samosa"
+}

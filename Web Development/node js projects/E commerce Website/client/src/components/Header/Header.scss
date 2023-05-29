@@ -1,0 +1,142 @@
+@import "../../css-config/mixins.scss";
+.header-wrapper {
+  width: 100%;
+  padding: 1rem;
+  color: var(--textColorDark);
+  background: var(--darkGreen);
+  .header-content {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    @include lg {
+      width: 100%;
+    }
+    .menu-button {
+      transition: all 500ms ease-in;
+      display: none;
+      @include md {
+        display: block;
+      }
+    }
+    .header-left {
+      gap: 1rem;
+      @include md {
+        background-color: #5ea46b;
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        left: 0;
+        top: 57px;
+        width: 50%;
+        height: 100vh;
+        padding: 2rem;
+        // visibility: collapse;
+      }
+      button {
+        font-size: 110%;
+        outline: none;
+        border: none;
+        background-color: #00000000;
+        color: inherit;
+        font-weight: 500;
+        @include lg {
+          font-size: 90%;
+        }
+      }
+    }
+    .show-menu {
+      animation: showMenu 300ms forwards ease-in;
+    }
+    .hide-menu {
+      animation: hideMenu 300ms forwards ease-out;
+    }
+    .header-center {
+      margin: 0 1rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      @include sm {
+        left: 10%;
+        transform: translateX(0%);
+        position: absolute;
+      }
+      h1 {
+        padding: 0.3rem;
+        border-radius: 0.2rem;
+        color: var(--textColor);
+        font-weight: 900;
+      }
+    }
+    .header-right {
+      svg {
+        font-size: 1.8rem;
+        font-weight: 700;
+        // background-color: red;
+        @include lg {
+          font-size: 1.4rem;
+        }
+      }
+      .shooping-cart {
+        display: flex;
+        .cart-item-count {
+          height: 10px;
+          top: 5px;
+          position: absolute;
+          font-size: 60%;
+          right: 11%;
+          @include lg {
+            right: 15px;
+          }
+        }
+      }
+      gap: 1rem;
+    }
+  }
+  &.show-header {
+    animation: 300ms showHeader forwards ease-in;
+  }
+  &.hide-header {
+    animation: 300ms hideHeader forwards ease-in;
+  }
+}
+
+@keyframes showHeader {
+  0% {
+    position: sticky;
+    top: -5rem;
+  }
+  100% {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@keyframes hideHeader {
+  0% {
+    position: sticky;
+    top: 0;
+  }
+  100% {
+    position: sticky;
+    top: -5rem;
+  }
+}
+
+@keyframes showMenu {
+  0% {
+      left: -25rem;
+    }
+    100% {
+      left: 0;
+  }
+}
+@keyframes hideMenu {
+  0% {
+    left: 0;
+}
+100% {
+      left: -25rem;
+  }
+}

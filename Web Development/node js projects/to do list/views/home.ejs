@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="mainbox">
+        <h1><%= page %></h1>
+    <form id="showitems" method="post" action="/checked">
+        <input type="hidden" name="title" value="<%= title %>" />
+        <% if(array.length == ""){ %>
+            <p>Your ToDos will appear here</p>
+        <% } %>
+        <% array.forEach((items)=>{ %>
+        <p><input type="checkbox" onchange="this.form.submit()" name="item" value="<%= items.name %>"> <%= items.name %> </p>
+        <% }) %>
+    </form>
+    <form action="/" method="post" id="additems">
+        <label for="item"></label>
+        <input type="text" name="item" placeholder="enter your note here">
+        <input type="hidden" name="title" value="<%= title %>" />
+        <input type="submit" value="+">
+    </form>
+    </div>
+</body>
+</html>

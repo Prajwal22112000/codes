@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1602916947 source:c:\users\asus\documents\programming in c\calculating the grades\main.c
+	<stdio.h>
+	<stdlib.h>
+

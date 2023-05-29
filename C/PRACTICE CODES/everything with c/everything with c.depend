@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1605173600 source:c:\users\asus\documents\programming in c\everything with c\calculate the root of a quadratic equation.c
+	<math.h>
+	<stdio.h>
+
+1605176777 source:c:\users\asus\documents\programming in c\everything with c\eithr a year is leap or not.c
+	<stdio.h>
+	<math.h>
+

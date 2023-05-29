@@ -1,0 +1,1 @@
+print ("".join(sorted(input("enter a string to sort "))))

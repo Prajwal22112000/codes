@@ -1,0 +1,19 @@
+<%- include("header.ejs") %>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<form action="/" method="post" name="mainform">
+    <div id="date">
+        <h1><%= currentdate %></h1>
+    </div>
+    <div id="todo">
+        <input type="text" name="item" placeholder="New Task/Item" autocomplete="off">
+        <input type="submit" name="submit" id="submit" value="+">
+        <% for(let i = 0; i < items.length; i++){%>
+            <input type="checkbox"><span> <%= items[i] %></span><br>
+        <% } %>
+        </div>
+    <footer>Developed by Prajwal Negi: @negiprajwal22@gmail.com</footer>
+</form>
+
+<%- include("footer") -%>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Set up the canvas and context
+const canvas = document.getElementById("game-canvas");
+const ctx = canvas.getContext("2d");
+
+// Define constants for game dimensions and gravity
+const GAME_WIDTH = canvas.width;
+const GAME_HEIGHT = canvas.height;
+const GRAVITY = 0.5;
+
+// Define the Flappy Bird object
+const flappyBird = {
+  x: 50,
+  y: 50,
+  width: 50,
+  height: 50,
+  velocity: 0,
+
+  // Function to draw the Flappy Bird on the canvas
+  draw() {
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+  },
+
+  // Function to update the Flappy Bird's position and velocity
+  update() {
+    this.velocity += GRAVITY;
+    this.y += this.velocity;
+  },
+
+  // Function to make the Flappy Bird jump
+  jump() {
+    this.velocity = -10;
+  }
+};
+
+// Function to draw the game on the canvas
+function draw() {
+  // Clear the canvas
+  ctx.clearRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
+
+  // Draw the Flappy Bird
+  flappyBird.draw();
+
+  // Update the Flappy Bird's position and velocity
+  flappyBird.update();
+}
+
+// Function to handle user input (i.e. make the Flappy Bird jump on spacebar press)
+function handleInput() {
+  document.addEventListener("keydown", event => {
+    if (event.keyCode === 32) {
+      flappyBird.jump();
+    }
+  });
+}
+
+// Function to check for game over (i.e. when the Flappy Bird hits the ground or goes off the top of the screen)
+function checkForGameOver() {
+  if (flappyBird.y + flappyBird.height > GAME_HEIGHT || flappyBird.y < 0) {
+    // Game over!
+    alert("Game over!");
+    // Reset the Flappy Bird's position and velocity
+    flappyBird.x = 50;
+    flappyBird.y = 50;
+    flappyBird.velocity = 0;
+  }
+}
+
+// Main game loop
+function gameLoop() {
+  // Draw the game
+  draw();
+
+  // Handle user input
+  handleInput();
+
+  // Check for game over
+  checkForGameOver();
+
+  // Request the next animation frame
+  requestAnimationFrame(gameLoop);
+}
+
+// Start the game loop
+gameLoop();
+
+    </script>
+</body>
+</html>

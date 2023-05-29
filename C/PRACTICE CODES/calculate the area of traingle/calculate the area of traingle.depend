@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603361028 source:c:\users\asus\documents\programming in c\calculate the area of traingle\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

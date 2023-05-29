@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605290541 source:c:\users\asus\documents\programming in c\armstrong number\main.c
+	<stdio.h>
+	<stdlib.h>
+

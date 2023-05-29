@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html style="font-family: verdana,geneva;">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>
+		Top 10 Anime of all Time
+	</title>
+</head>
+	<script type="text/javascript">
+            var picPaths = ['sources\\pictures\\n2.jpg', 'sources\\pictures\\n1.jpg','sources\\pictures\\n3.jpg','sources\\pictures\\n4.jpg'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,2000);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('imgBanner');
+                swapImage();
+            }
+	</script>
+
+<body>
+	<div align="center" class="image1">
+		<img  src="sources\pictures\NARUTOLOGO.jfif" width="25%" align="center">
+	</div>
+
+	<table  class="maintable header" width="100%" height= "60px" border="0" cellpadding="5" cellspacing="5" bgcolor="#FA6600">
+		<tr valign="">
+			<td >
+				<table class="header" width="80%" align= "center" border="0" cellpadding="1" cellspacing="5">
+
+					<td align="center" width="20%">
+						<font face="Verdana, sans-serif, Geneva" color="white">
+							<a href="#about"><h3>About</h3>
+							</a>
+						</font></td>
+
+					<td align="center" width="20%">
+						<font face="Verdana, sans-serif, Geneva" color="white">
+							<a href="#clan"><h3>Clan</h3>
+							</a>
+						</font>
+					</td>
+
+					<td align="center" width="20%">
+						<font face="Verdana, sans-serif, Geneva" color="white">
+							<a href="#team7"><h3>Team 7</h3>
+							</a>
+						</font></td>
+
+					<td align="center" width="20%">
+						<font face="Verdana, sans-serif, Geneva" color="white">
+							<a href="#discography"><h3>Discography</h3>
+							</a>
+						</font>
+					</td>
+
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<table class="maintable" width="100%" height= "150" cellpadding="5" cellspacing="5" bgcolor="#9d00b7" >
+		<tr>
+			<td align="center">
+				<table width="90%" align="middle" border="0" cellpadding="1" cellspacing="1">
+
+					<tr align="middle">
+						<td colspan="2" align="middle">
+							<font color="orange"><h1 >PUPOLAR QUOTES BY UZAMAKI NARUTO</h1>
+						</font>
+						</td>
+					</tr>
+
+					<tr bgcolor="" align="middle">
+						<td width="50%">
+							<h3>1. Dattebayo</h3>
+						</td>
+						<td width="50%">
+							<h3>
+								2. That's my Ninja Way
+							</h3>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<div>
+            <img class="maintable" id="imgBanner" src="" alt="" width="100%" />
+	</div>
+
+	<table class="maintable" width="100%" bgcolor="9900ff">
+		<tr >
+			<td >
+				<table  align="middle" width="100%">
+					<tr align="MIDDLE">
+						<td><font color="orange">
+							<h1>MORE POPULAR QUOTES BY UZAMKI NARUTO</h1>
+						</font>
+						</td>
+					</tr>
+					<tr align="middle">
+						<td>
+							<h3>
+								1.I'm gonna become Hokage someday
+							</h3>
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table id="about" height="10%" width="100%" border="0" cellpadding="2">
+		<tr>
+			<td>
+				<table  style="border-radius: 50px;"  height = "30" align="center" bgcolor="yellow" width="30%" border="0">
+					<tr valign="bottom" align="center">
+						<td style="vertical-align: bottom;"> 
+							<font color="orange">
+								<h1>ABOUT</h1>
+							</font>
+						</td>
+					</tr>
+				</table>
+				
+			</td>
+		</tr>
+		
+		<br>
+		<table class="maintable"  bgcolor="orange" width="100%" height = "200">
+				<tr>
+					<td >
+						<p>
+							Well Every One Knows about the Naruto Uzamaki of leaf Vilage.
+				
+						</p>
+						<p>
+							Where Everyone Love him but were afraid as well of Naruto Uzamaki.
+						</p>
+						<p>
+							Naruto was sad
+						</p>
+					</td>
+				</tr>
+		</table>
+	</table>
+
+	<table id="clan" height="10%" width="100%"  border="0" cellpadding="2">
+		<tr>
+			<td>
+				<table  style="border-radius: 50px;"  height = "30" align="center" bgcolor="yellow" width="30%" border="0">
+					<tr valign="bottom" align="center">
+						<td style="vertical-align:bottom;"> 
+							<font color="orange">
+								<h1>CLAN</h1>
+							</font>
+						</td>
+					</tr>
+				</table>
+				
+			</td>
+		</tr>
+		
+		<br>
+		<table class="maintable" bgcolor="orange" width="100%" height = "200">
+				<tr>
+					<td >
+						<p>
+							Uzamaki Narto is the part of Uzamaki clan.
+						</p>
+						<p>
+							His father was a Hokage and his mother was very strong women both died when Naruto was born.
+						</p>
+					</td>
+				</tr>
+		</table>
+	</table>
+
+	<table id="team7" height="10%" width="100%"  border="0" cellpadding="2">
+		<tr>
+			<td>
+				<table  style="border-radius: 50px;"  height = "30" align="center" bgcolor="yellow" width="30%" border="0">
+					<tr valign="bottom" align="center">
+						<td style="vertical-align: bottom;"> 
+							<font color="orange">
+								<h1>TEAM 7</h1>
+							</font>
+						</td>
+					</tr>
+				</table>
+				
+			</td>
+		</tr>
+		
+		<br>
+		<table class="maintable" bgcolor="orange" width="100%" height = "200">
+				<tr>
+					<td >
+						<p>
+							The leader of Team 7 is Kakashi and it has three members among which two are actually very good
+						</p>
+						<p>
+							The name of all those three members are Naruto, Sasuke, and Sakura the asshole bitch.
+						</p>
+					</td>
+				</tr>
+		</table>
+	</table>
+
+	<table  id="discography" height="10%" width="100%"  border="0" cellpadding="2">
+		<tr>
+			<td>
+				<table  style="border-radius: 50px;"  height = "30" align="center" bgcolor="yellow" width="30%" border="0">
+					<tr valign="bottom" align="center">
+						<td style="vertical-align: bottom;"> 
+							<font color="orange">
+								<h1>DISCOGRAPHY</h1>
+							</font>
+						</td>
+					</tr>
+				</table>
+				
+			</td>
+		</tr>
+		
+		<br>
+		<table class="maintable" bgcolor="orange" width="100%" height = "200">
+				<tr>
+					<td >
+						<p>
+							As the name suggests this is discography. 
+							Here you people can do disco and dance on it
+						</p>
+					</td>
+				</tr>
+		</table>
+	</table>
+
+<div class= "footer">
+	<h3>Contact Us</h3>
+	<div class="ftcnt">
+		<img src="sources/pictures/fb.png" >
+				<a href="https://www.facebook.com/">
+		<img src="sources/pictures/insta.png" >
+				<a href="https://www.Instagram.com/">
+		<img src="sources/pictures/reddit.png" >
+				<a href="https://www.Reddit.com/">
+		<img src="sources/pictures/Twitter.png">
+				<a href= "https://www.Twitter.com/" >
+	</div>
+
+</div>
+</body>

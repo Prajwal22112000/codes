@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605166902 source:c:\users\asus\documents\programming in c\to check if a alphabet is vowel or not\main.c
+	<stdio.h>
+	<stdlib.h>
+

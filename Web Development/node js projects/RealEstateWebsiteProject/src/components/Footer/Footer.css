@@ -1,0 +1,41 @@
+.f-wrapper{
+    background:var(--textGreen);
+    width: 100%;
+}
+.f-container{
+    /* flex:1; */
+    justify-content: space-between;
+}
+.f-right, .f-left{
+    width: 50%;
+}
+.f-wrapper .secondaryGreenText{
+    color: var(--green);
+}
+.f-left>img{
+    height: 2.5rem;
+}
+.f-left .secondaryGreenText {
+    margin: 1rem auto;
+    width: 20rem;
+}
+.f-right .primaryText{
+    color: var(--darkGreen);
+}
+.f-right>span{
+    margin-bottom: 0.5rem;
+}
+.links {
+    gap:1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .f-right, .f-left{
+        /* background-color: red; */
+        /* display: none; */
+        align-items: center;
+        width: 100%;
+    }
+}

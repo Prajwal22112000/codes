@@ -1,0 +1,1 @@
+# write a program to display all the records of amanger table and one record of employee table

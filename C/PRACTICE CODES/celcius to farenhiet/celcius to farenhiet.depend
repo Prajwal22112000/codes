@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1603274599 source:c:\users\asus\documents\programming in c\ celcius to farenhiet\main.c
+	<stdio.h>
+	<math.h>
+

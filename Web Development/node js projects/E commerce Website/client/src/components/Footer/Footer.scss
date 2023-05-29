@@ -1,0 +1,75 @@
+@import "../../css-config/mixins.scss";
+.footer-wrapper {
+  background: var(--headerBlue);
+  color: white;
+  padding: 1rem;
+  .footer-content {
+    width: 80%;
+    margin: 1rem auto;
+    align-items: flex-start;
+    gap: 1rem;
+    .footer-h1 {
+      color: var(--mainGreen);
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    button {
+      outline: none;
+      border: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .footer-left {
+      flex: 1;
+      align-items: flex-start;
+      justify-content: flex-start;
+      p {
+        margin: 0.5rem 0 0;
+      }
+      @include md {
+        flex: auto;
+      }
+    }
+    .footer-center {
+      flex: 1;
+      .contact-items {
+        margin: 0.5rem 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+      @include md {
+        flex: auto;
+      }
+    }
+    .footer-right {
+      flex: 1;
+      line-height: 1.5rem;
+      align-items: flex-start;
+      gap: 1rem;
+      @include md{
+        width: 100%;
+        flex: 0;
+      }
+      .footer-categories,
+      .footer-pages {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        button {
+          margin: 0.5rem 0 0;
+        }
+      }
+      @include md {
+        flex: auto;
+      }
+    }
+    @include md {
+      flex-direction: column;
+    }
+  }
+}
